@@ -1,0 +1,58 @@
+- provide(:title, "Show")
+.row.zero-margin
+  %br
+  .col-md-12
+    %h3.text-center= @product.name.capitalize
+    %br
+    .col-md-2.col-md-offset-1
+      %b Stock Price :
+      = @product.stock_price
+    .col-md-2
+      %b Strike Price :
+      = @product.strike_price
+    .col-md-2
+      %b Expiry Time(Years) :
+      = @product.maturity_time
+    .col-md-2
+      %b Risk-free Rate(%) :
+      = @product.risk_free_rate*100
+    .col-md-2
+      %b Volatility(%) :
+      = @product.volatility*100
+    .col-md-1
+.row.zero-margin
+  .col-md-12.top-margin
+    .col-md-4.col-md-offset-1
+      %b.text-warning Call Price:
+      %span.text-info= @call_price
+      &nbsp;
+      &nbsp;
+      %b.text-warning Put Price:
+      %span.text-info= @put_price
+    %hr#line-style
+
+.row.zero-margin
+  .col-md-12
+    .col-md-3.col-md-offset-1
+      %h3 Simulation
+      %br
+      %span Choose the Sensitivity Factor:
+      .radio-buttons-area
+        = render "simulation_buttons"
+      %br
+      .simulation-params
+        = render "simulation_form"
+    .col-md-2
+      %br
+      %br
+      #originalGraph
+    .col-md-2
+      %br
+      %br
+      #simulatedGraph
+
+:javascript
+$(document).ready(function(){
+  $("#originalGraph").html("#{j column_chart({'Option Price' => @call_price})}");
+  $("#simulatedGraph").html("#{j column_chart({'try simulation' =>@put_price})}");
+});

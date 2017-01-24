@@ -1,0 +1,24 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}/
+    %title
+      = yield(:title)
+      | Black Schole Demo
+    = csrf_meta_tags
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    #whole-layout
+      #header
+        = render 'layouts/header'
+      #main-body
+        - flash.each do |message_type, message|
+          %div{:class => "super-alert alert #{flash_class(message_type) unless message.blank?}"}
+            %a.close{"aria-label" => "close", "data-dismiss" => "alert", href: "#", title: "close"} ×
+            = message
+        = yield
+
+:javascript
+  $(".super-alert").delay(5000).slideUp(1000);

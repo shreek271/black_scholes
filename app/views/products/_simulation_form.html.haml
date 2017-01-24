@@ -1,0 +1,6 @@
+= form_for(@product, url: product_simulation_result_path(@product), method: :get,html: { role: "form", id: "productSimulationForm" }, remote: true) do |f|
+  = f.hidden_field :s_id, id: "s_id"
+  .form-group.hide
+    = f.label :sensitive_factor, "Sensitive Factor*"
+    = f.number_field :sensitive_factor, class: "form-control"
+  = f.submit :Submit, class: "btn btn-success hide", data: { disable_with: "Please wait..." }, id: "submit-simulation-form"

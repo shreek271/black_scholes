@@ -1,0 +1,11 @@
+%nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      = link_to "Test", root_url, class: "navbar-brand"
+    %ul.nav.navbar-nav
+      %li
+        = link_to "Home", root_url
+      %li
+        = link_to "New Product", new_product_path
+      %li
+        = link_to "All Products", products_path
