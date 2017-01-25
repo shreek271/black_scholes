@@ -1,4 +1,4 @@
-function showInput(e){
+function showInput(){
   var input = $('input[name="optionsRadios"]:checked').val();
   $(".form-group").removeClass("hide");
   $("#s_id").val(input);

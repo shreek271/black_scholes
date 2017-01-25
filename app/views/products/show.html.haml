@@ -54,5 +54,5 @@
 :javascript
 $(document).ready(function(){
   $("#originalGraph").html("#{j column_chart({'Option Price' => @call_price})}");
-  $("#simulatedGraph").html("#{j column_chart({'try simulation' =>@put_price})}");
+  $("#simulatedGraph").html("#{j column_chart({'try simulation' =>0})}");
 });

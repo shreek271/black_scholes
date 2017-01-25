@@ -1,0 +1,15 @@
+I"ƒ(function() {
+  showInput(function() {
+    var input;
+    input = $('input[name="optionsRadios"]:checked').val();
+    $('.form-group').removeClass('hide');
+    $('#s_id').val(input);
+    return $('#submit-simulation-form').removeClass('hide');
+  });
+
+  $('#submit-simulation-form').click(function() {
+    return $('#productSimulationForm').trigger('submit.rails');
+  });
+
+}).call(this);
+:ET

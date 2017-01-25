@@ -14,40 +14,6 @@ class Product < ApplicationRecord
   
   attr_accessor :s_id, :sensitive_factor
 
-  # computes the call price sensitivity to a change in underlying price
-  def delta_call( underlying, strike, time, interest, sigma, dividend )
-    norm_sdist( d_one( underlying, strike, time, interest, sigma, dividend ) )
-  end
-
-  # computes the put price sensitivity to a change in underlying price	
-  def delta_put( underlying, strike, time, interest, sigma, dividend )
-    delta_call( underlying, strike, time, interest, sigma, dividend ) - 1
-  end
-
-  # computes the option price sensitivity to a change in delta	
-  def gamma( underlying, strike, time, interest, sigma, dividend )
-    phi( d_one( underlying, strike, time, interest, sigma, dividend ) ) / ( underlying * sigma * sqrt(time) )
-  end
-	
-  # computes the call price sensitivity to a change in time
-  def theta_call( underlying, strike, time, interest, sigma, dividend )
-    term1 = underlying * phi( d_one( underlying, strike, time, interest, sigma, dividend ) ) * sigma / ( 2 * sqrt(time) )
-    term2 = interest * strike * exp(-1.0 * interest * time) * norm_sdist( d_two( underlying, strike, time, interest, sigma, dividend ) )
-    ( - term1 - term2 ) / 365.0
-  end
-
-  # computes the put price sensitivity to a change in time
-  def theta_put( underlying, strike, time, interest, sigma, dividend )
-    term1 = underlying * phi( d_one( underlying, strike, time, interest, sigma, dividend ) ) * sigma / ( 2 * sqrt(time) )
-    term2 = interest * strike * exp(-1.0 * interest * time) * norm_sdist( - d_two( underlying, strike, time, interest, sigma, dividend ) )
-    ( - term1 + term2 ) / 365.0
-  end
-
-  # computes the option price sensitivity to a change in volatility
-  def vega( underlying, strike, time, interest, sigma, dividend )
-    0.01 * underlying * sqrt(time) * phi(d_one(underlying, strike, time, interest, sigma, dividend))
-  end
-
   def price_call( underlying, strike, time, interest, sigma, dividend )
     d1 = d_one( underlying, strike, time, interest, sigma, dividend )
     discounted_underlying = exp(-1.0 * dividend * time) * underlying
