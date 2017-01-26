@@ -5,20 +5,20 @@
     = render_errors(@product)
     .form-group
       = f.label :name, "Name*"
-      = f.text_field :name, class: "form-control"
+      = f.text_field :name, class: "form-control", placeholder: "example Apex"
     .form-group
       = f.label :stock_price, "Stock Price*"
-      = f.number_field :stock_price, class: "form-control"
+      = f.number_field :stock_price, class: "form-control", step: 0.01, placeholder: "example 60"
     .form-group
       = f.label :strike_price, "Strike Price*"
-      = f.number_field :strike_price, class: "form-control"
+      = f.number_field :strike_price, class: "form-control", step: 0.01, placeholder: "example 58"
     .form-group
-      = f.label :maturity_time, "Expiry Time*"
+      = f.label :maturity_time, "Expiry Time(days)*"
       = f.number_field :maturity_time, class: "form-control", placeholder: "Enter the number of days"
     .form-group
-      = f.label :risk_free_rate, "Risk Free Rate*"
-      = f.number_field :risk_free_rate, class: "form-control", placeholder: "example 10"
+      = f.label :risk_free_rate, "Risk Free Rate(%)*"
+      = f.number_field :risk_free_rate, class: "form-control", step: 0.01, placeholder: "example 4.5"
     .form-group
-      = f.label :volatility
-      = f.number_field :volatility, class: "form-control"
+      = f.label :volatility, "Volatility(%)*"
+      = f.number_field :volatility, class: "form-control", step: 0.01, placeholder: "example 23.5"
     = f.submit :Submit, class: "btn btn-success", data: { disable_with: "Please wait..." }

@@ -11,8 +11,8 @@
       %b Strike Price :
       = @product.strike_price
     .col-md-2
-      %b Expiry Time(Years) :
-      = @product.maturity_time
+      %b Expiry Time(Days) :
+      = (@product.maturity_time*365).round
     .col-md-2
       %b Risk-free Rate(%) :
       = @product.risk_free_rate*100
@@ -33,7 +33,7 @@
 
 .row.zero-margin
   .col-md-12
-    .col-md-3.col-md-offset-1
+    .col-md-2.col-md-offset-1
       %h3 Simulation
       %br
       %span Choose the Sensitivity Factor:
@@ -42,17 +42,18 @@
       %br
       .simulation-params
         = render "simulation_form"
-    .col-md-2
+    .col-md-3.col-md-offset-1
       %br
       %br
-      #originalGraph
-    .col-md-2
+      #call-price-graph
+    .col-md-3
       %br
       %br
-      #simulatedGraph
+      #put-price-graph
+
 
 :javascript
 $(document).ready(function(){
-  $("#originalGraph").html("#{j column_chart({'Option Price' => @call_price})}");
-  $("#simulatedGraph").html("#{j column_chart({'try simulation' =>0})}");
+  $("#call-price-graph").html("#{j column_chart({'Call Price' => @call_price, 'try simulation'=> 0})}");
+  $("#put-price-graph").html("#{j column_chart({'Put Price' => @put_price, 'try simulation' => 0})}");
 });

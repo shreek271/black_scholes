@@ -730,3 +730,1369 @@ Processing by ProductsController#show as HTML
 Completed 200 OK in 306ms (Views: 303.7ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-01-25 10:39:24 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.haml within layouts/application
+  Rendered static_pages/home.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_header.html.haml (3.5ms)
+Completed 200 OK in 1002ms (Views: 981.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-25 10:40:33 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (2.4ms)
+  Rendered products/_form.html.haml (121.5ms)
+  Rendered products/new.html.haml within layouts/application (124.1ms)
+  Rendered layouts/_header.html.haml (2.0ms)
+Completed 200 OK in 211ms (Views: 181.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-01-25 10:41:53 +0530
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered products/index.html.haml within layouts/application (22.8ms)
+  Rendered layouts/_header.html.haml (1.5ms)
+Completed 200 OK in 71ms (Views: 52.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-25 10:41:57 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (2.2ms)
+  Rendered products/_simulation_form.html.haml (3.8ms)
+  Rendered products/show.html.haml within layouts/application (13.1ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 64ms (Views: 47.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=v&product%5Bsensitive_factor%5D=35&commit=Submit" for 127.0.0.1 at 2017-01-25 10:42:09 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"v", "sensitive_factor"=>"35"}, "commit"=>"Submit", "product_id"=>"6"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (3.1ms)
+Completed 200 OK in 20ms (Views: 5.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-25 10:46:03 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (2.1ms)
+  Rendered products/_form.html.haml (11.3ms)
+  Rendered products/new.html.haml within layouts/application (14.3ms)
+  Rendered layouts/_header.html.haml (2.1ms)
+Completed 200 OK in 65ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-01-25 10:46:32 +0530
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered products/index.html.haml within layouts/application (8.0ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 64ms (Views: 61.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-25 10:46:53 +0530
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.haml within layouts/application
+  Rendered static_pages/home.html.haml within layouts/application (1.6ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-25 18:58:58 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.haml within layouts/application
+  Rendered static_pages/home.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_header.html.haml (2.2ms)
+Completed 200 OK in 550ms (Views: 516.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-25 18:59:04 +0530
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.haml within layouts/application
+  Rendered static_pages/home.html.haml within layouts/application (1.3ms)
+  Rendered layouts/_header.html.haml (3.4ms)
+Completed 200 OK in 76ms (Views: 74.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-01-25 18:59:05 +0530
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered products/index.html.haml within layouts/application (34.4ms)
+  Rendered layouts/_header.html.haml (2.1ms)
+Completed 200 OK in 129ms (Views: 81.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-25 18:59:30 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.6ms)
+  Rendered products/_form.html.haml (117.9ms)
+  Rendered products/new.html.haml within layouts/application (132.6ms)
+  Rendered layouts/_header.html.haml (2.0ms)
+Completed 200 OK in 212ms (Views: 173.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-01-25 18:59:31 +0530
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered products/index.html.haml within layouts/application (9.7ms)
+  Rendered layouts/_header.html.haml (2.4ms)
+Completed 200 OK in 59ms (Views: 55.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-25 18:59:32 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (2.9ms)
+  Rendered products/_simulation_form.html.haml (8.1ms)
+  Rendered products/show.html.haml within layouts/application (31.1ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 146ms (Views: 66.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=sp&product%5Bsensitive_factor%5D=65&commit=Submit" for 127.0.0.1 at 2017-01-25 19:00:07 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"sp", "sensitive_factor"=>"65"}, "commit"=>"Submit", "product_id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (1.2ms)
+Completed 200 OK in 42ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-25 19:03:42 +0530
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.haml within layouts/application
+  Rendered static_pages/home.html.haml within layouts/application (1.2ms)
+  Rendered layouts/_header.html.haml (1.6ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-25 19:03:56 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (2.5ms)
+  Rendered products/_form.html.haml (11.2ms)
+  Rendered products/new.html.haml within layouts/application (14.2ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 63ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-01-25 19:03:58 +0530
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered products/index.html.haml within layouts/application (17.3ms)
+  Rendered layouts/_header.html.haml (1.5ms)
+Completed 200 OK in 62ms (Views: 55.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-25 19:04:24 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (3.0ms)
+  Rendered products/_form.html.haml (12.2ms)
+  Rendered products/new.html.haml within layouts/application (14.3ms)
+  Rendered layouts/_header.html.haml (1.6ms)
+Completed 200 OK in 62ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-26 09:28:22 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.haml within layouts/application
+  Rendered static_pages/home.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_header.html.haml (1.9ms)
+Completed 200 OK in 454ms (Views: 424.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-26 09:28:25 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.9ms)
+  Rendered products/_form.html.haml (129.4ms)
+  Rendered products/new.html.haml within layouts/application (132.0ms)
+  Rendered layouts/_header.html.haml (1.5ms)
+Completed 200 OK in 277ms (Views: 174.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-01-26 09:30:24 +0530
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered products/index.html.haml within layouts/application (18.6ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 54ms (Views: 51.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 09:30:25 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (3.3ms)
+  Rendered products/_simulation_form.html.haml (79.1ms)
+  Rendered products/show.html.haml within layouts/application (169.1ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 247ms (Views: 202.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/6/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=v&product%5Bsensitive_factor%5D=40.5&commit=Submit" for 127.0.0.1 at 2017-01-26 09:30:41 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"v", "sensitive_factor"=>"40.5"}, "commit"=>"Submit", "product_id"=>"6"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (1.1ms)
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 09:32:04 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (2.1ms)
+  Rendered products/_simulation_form.html.haml (2.0ms)
+  Rendered products/show.html.haml within layouts/application (14.5ms)
+  Rendered layouts/_header.html.haml (5.0ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=rfr&product%5Bsensitive_factor%5D=3.45&commit=Submit" for 127.0.0.1 at 2017-01-26 09:32:40 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"rfr", "sensitive_factor"=>"3.45"}, "commit"=>"Submit", "product_id"=>"6"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (1.1ms)
+Completed 200 OK in 8ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 09:53:27 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 2.4ms)
+
+
+  
+NoMethodError (undefined method `set_call_put_price' for #<ProductsController:0x007fd4715ed268>):
+  
+activesupport (5.0.1) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+activesupport (5.0.1) lib/active_support/callbacks.rb:150:in `block (2 levels) in halting_and_conditional'
+actionpack (5.0.1) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.0.1) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+activesupport (5.0.1) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.1) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.1) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.1) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendering /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.1ms)
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 09:57:48 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (1.8ms)
+  Rendered products/_simulation_form.html.haml (2.3ms)
+  Rendered products/show.html.haml within layouts/application (11.5ms)
+  Rendered layouts/_header.html.haml (3.6ms)
+Completed 200 OK in 70ms (Views: 50.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 09:58:37 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (2.2ms)
+  Rendered products/_simulation_form.html.haml (2.0ms)
+  Rendered products/show.html.haml within layouts/application (14.1ms)
+  Rendered layouts/_header.html.haml (2.6ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/6/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=v&product%5Bsensitive_factor%5D=35&commit=Submit" for 127.0.0.1 at 2017-01-26 09:59:04 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"v", "sensitive_factor"=>"35"}, "commit"=>"Submit", "product_id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (1.6ms)
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 09:59:45 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (1.9ms)
+  Rendered products/_simulation_form.html.haml (2.3ms)
+  Rendered products/show.html.haml within layouts/application (11.5ms)
+  Rendered layouts/_header.html.haml (1.8ms)
+Completed 200 OK in 56ms (Views: 52.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/6/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=v&product%5Bsensitive_factor%5D=35&commit=Submit" for 127.0.0.1 at 2017-01-26 10:00:12 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"v", "sensitive_factor"=>"35"}, "commit"=>"Submit", "product_id"=>"6"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (2.2ms)
+Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 10:01:18 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (2.5ms)
+  Rendered products/_simulation_form.html.haml (2.5ms)
+  Rendered products/show.html.haml within layouts/application (14.2ms)
+  Rendered layouts/_header.html.haml (1.5ms)
+Completed 200 OK in 81ms (Views: 78.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 10:01:39 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (2.1ms)
+  Rendered products/_simulation_form.html.haml (4.1ms)
+  Rendered products/show.html.haml within layouts/application (14.1ms)
+  Rendered layouts/_header.html.haml (2.9ms)
+Completed 200 OK in 55ms (Views: 52.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 10:01:54 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (3.2ms)
+  Rendered products/_simulation_form.html.haml (1.9ms)
+  Rendered products/show.html.haml within layouts/application (12.5ms)
+  Rendered layouts/_header.html.haml (2.7ms)
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 10:02:40 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (2.0ms)
+  Rendered products/_simulation_form.html.haml (1.7ms)
+  Rendered products/show.html.haml within layouts/application (19.4ms)
+  Rendered layouts/_header.html.haml (1.6ms)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/6/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=v&product%5Bsensitive_factor%5D=30&commit=Submit" for 127.0.0.1 at 2017-01-26 10:03:29 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"v", "sensitive_factor"=>"30"}, "commit"=>"Submit", "product_id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (3.1ms)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 10:08:55 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (2.0ms)
+  Rendered products/_simulation_form.html.haml (2.0ms)
+  Rendered products/show.html.haml within layouts/application (12.4ms)
+  Rendered layouts/_header.html.haml (1.9ms)
+Completed 200 OK in 56ms (Views: 53.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 10:09:04 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (2.8ms)
+  Rendered products/_simulation_form.html.haml (2.4ms)
+  Rendered products/show.html.haml within layouts/application (14.1ms)
+  Rendered layouts/_header.html.haml (1.8ms)
+Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 10:09:28 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (3.0ms)
+  Rendered products/_simulation_form.html.haml (2.0ms)
+  Rendered products/show.html.haml within layouts/application (11.6ms)
+  Rendered layouts/_header.html.haml (1.8ms)
+Completed 200 OK in 50ms (Views: 47.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 10:09:54 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (2.3ms)
+  Rendered products/_simulation_form.html.haml (4.0ms)
+  Rendered products/show.html.haml within layouts/application (15.7ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 67ms (Views: 63.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/6/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=v&product%5Bsensitive_factor%5D=35&commit=Submit" for 127.0.0.1 at 2017-01-26 10:10:07 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"v", "sensitive_factor"=>"35"}, "commit"=>"Submit", "product_id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (1.4ms)
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 10:11:16 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (4.0ms)
+  Rendered products/_simulation_form.html.haml (2.0ms)
+  Rendered products/show.html.haml within layouts/application (13.7ms)
+  Rendered layouts/_header.html.haml (2.9ms)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=v&product%5Bsensitive_factor%5D=35&commit=Submit" for 127.0.0.1 at 2017-01-26 10:11:26 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"v", "sensitive_factor"=>"35"}, "commit"=>"Submit", "product_id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (1.5ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=v&product%5Bsensitive_factor%5D=30&commit=Submit" for 127.0.0.1 at 2017-01-26 10:11:46 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"v", "sensitive_factor"=>"30"}, "commit"=>"Submit", "product_id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (1.6ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 10:13:52 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (3.6ms)
+  Rendered products/_simulation_form.html.haml (2.1ms)
+  Rendered products/show.html.haml within layouts/application (12.7ms)
+  Rendered layouts/_header.html.haml (1.6ms)
+Completed 200 OK in 61ms (Views: 58.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/6/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=v&product%5Bsensitive_factor%5D=32&commit=Submit" for 127.0.0.1 at 2017-01-26 10:14:09 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"v", "sensitive_factor"=>"32"}, "commit"=>"Submit", "product_id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (1.4ms)
+Completed 200 OK in 7ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=v&product%5Bsensitive_factor%5D=32&commit=Submit" for 127.0.0.1 at 2017-01-26 10:14:11 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"v", "sensitive_factor"=>"32"}, "commit"=>"Submit", "product_id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (3.5ms)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 10:14:49 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (3.3ms)
+  Rendered products/_simulation_form.html.haml (1.8ms)
+  Rendered products/show.html.haml within layouts/application (12.2ms)
+  Rendered layouts/_header.html.haml (1.8ms)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 10:15:12 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (2.1ms)
+  Rendered products/_simulation_form.html.haml (1.8ms)
+  Rendered products/show.html.haml within layouts/application (13.1ms)
+  Rendered layouts/_header.html.haml (1.5ms)
+Completed 200 OK in 63ms (Views: 61.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=v&product%5Bsensitive_factor%5D=32&commit=Submit" for 127.0.0.1 at 2017-01-26 10:15:28 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"v", "sensitive_factor"=>"32"}, "commit"=>"Submit", "product_id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (1.8ms)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 10:16:09 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (3.1ms)
+  Rendered products/_simulation_form.html.haml (2.3ms)
+  Rendered products/show.html.haml within layouts/application (11.6ms)
+  Rendered layouts/_header.html.haml (3.2ms)
+Completed 200 OK in 52ms (Views: 49.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=rfr&product%5Bsensitive_factor%5D=4.5&commit=Submit" for 127.0.0.1 at 2017-01-26 10:16:21 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"rfr", "sensitive_factor"=>"4.5"}, "commit"=>"Submit", "product_id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (1.2ms)
+Completed 200 OK in 8ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=rfr&product%5Bsensitive_factor%5D=5&commit=Submit" for 127.0.0.1 at 2017-01-26 10:16:48 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"rfr", "sensitive_factor"=>"5"}, "commit"=>"Submit", "product_id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (2.5ms)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=rfr&product%5Bsensitive_factor%5D=10&commit=Submit" for 127.0.0.1 at 2017-01-26 10:16:57 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"rfr", "sensitive_factor"=>"10"}, "commit"=>"Submit", "product_id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (1.4ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 10:18:12 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (4.2ms)
+  Rendered products/_simulation_form.html.haml (2.1ms)
+  Rendered products/show.html.haml within layouts/application (14.0ms)
+  Rendered layouts/_header.html.haml (3.5ms)
+Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-01-26 10:19:50 +0530
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered products/index.html.haml within layouts/application (4.4ms)
+  Rendered layouts/_header.html.haml (1.5ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-01-26 10:21:03 +0530
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered products/index.html.haml within layouts/application (3.9ms)
+  Rendered layouts/_header.html.haml (4.6ms)
+Completed 200 OK in 48ms (Views: 45.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-26 10:21:42 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.8ms)
+  Rendered products/_form.html.haml (16.6ms)
+  Rendered products/new.html.haml within layouts/application (18.4ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 289ms (Views: 108.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-01-26 10:21:44 +0530
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W6H1iTeA23KmpuIRdUQWznyVV1YYgFfCjKeFwDjWEG0kNshuo7yibKD6cCE2Z3HcM1uD5LjS/tTNJbVHLwjTNw==", "product"=>{"name"=>"", "stock_price"=>"", "strike_price"=>"", "maturity_time"=>"", "risk_free_rate"=>"", "volatility"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (2.8ms)
+  Rendered products/_form.html.haml (7.3ms)
+  Rendered products/new.html.haml within layouts/application (9.2ms)
+  Rendered layouts/_header.html.haml (1.6ms)
+Completed 200 OK in 40ms (Views: 36.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-26 10:22:19 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.2ms)
+  Rendered products/_form.html.haml (7.8ms)
+  Rendered products/new.html.haml within layouts/application (10.3ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-26 10:22:21 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.2ms)
+  Rendered products/_form.html.haml (6.2ms)
+  Rendered products/new.html.haml within layouts/application (7.9ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 140ms (Views: 138.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-01-26 10:22:23 +0530
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  [1m[36mProduct Load (68.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered products/index.html.haml within layouts/application (73.8ms)
+  Rendered layouts/_header.html.haml (2.5ms)
+Completed 200 OK in 109ms (Views: 39.2ms | ActiveRecord: 68.2ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2017-01-26 10:22:27 +0530
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/edit.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.3ms)
+  Rendered products/_form.html.haml (7.1ms)
+  Rendered products/edit.html.haml within layouts/application (8.9ms)
+  Rendered layouts/_header.html.haml (2.5ms)
+Completed 200 OK in 137ms (Views: 60.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2017-01-26 10:25:46 +0530
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/edit.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.9ms)
+  Rendered products/_form.html.haml (11.7ms)
+  Rendered products/edit.html.haml within layouts/application (15.4ms)
+  Rendered layouts/_header.html.haml (3.6ms)
+Completed 200 OK in 92ms (Views: 89.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2017-01-26 10:27:10 +0530
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/edit.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.4ms)
+  Rendered products/_form.html.haml (40.4ms)
+  Rendered products/edit.html.haml within layouts/application (42.2ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `maturity' for #<Product:0x007fd4643aafd0>
+Did you mean?  maturity_time):
+    14:       = f.number_field :strike_price, class: "form-control"
+    15:     .form-group
+    16:       = f.label :maturity_time, "Expiry Time*"
+    17:       = f.number_field :maturity_time, class: "form-control", placeholder: "Enter the number of days", value: (@product.maturity*365).abs if !f.object.new_record?
+    18:     .form-group
+    19:       = f.label :risk_free_rate, "Risk Free Rate*", step: 0.01
+    20:       = f.number_field :risk_free_rate, class: "form-control", placeholder: "example 10", value: @product.risk_free_rate*100 if !f.object.new_record?
+  
+app/views/products/_form.html.haml:17:in `block in _app_views_products__form_html_haml__4498717000242125344_70275094928560'
+app/views/products/_form.html.haml:1:in `_app_views_products__form_html_haml__4498717000242125344_70275094928560'
+app/views/products/edit.html.haml:5:in `_app_views_products_edit_html_haml__636839088324775291_70275095677820'
+  Rendering /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.5ms)
+Started GET "/products/6/edit" for 127.0.0.1 at 2017-01-26 10:27:28 +0530
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (7.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/edit.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.6ms)
+  Rendered products/_form.html.haml (7.9ms)
+  Rendered products/edit.html.haml within layouts/application (10.0ms)
+  Rendered layouts/_header.html.haml (1.5ms)
+Completed 200 OK in 55ms (Views: 45.9ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2017-01-26 10:27:55 +0530
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/edit.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (2.0ms)
+  Rendered products/_form.html.haml (7.8ms)
+  Rendered products/edit.html.haml within layouts/application (11.3ms)
+  Rendered layouts/_header.html.haml (1.5ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2017-01-26 10:29:39 +0530
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/edit.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (2.5ms)
+  Rendered products/_form.html.haml (9.7ms)
+  Rendered products/edit.html.haml within layouts/application (11.2ms)
+  Rendered layouts/_header.html.haml (3.3ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2017-01-26 10:31:13 +0530
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/edit.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.2ms)
+  Rendered products/_form.html.haml (6.1ms)
+  Rendered products/edit.html.haml within layouts/application (8.6ms)
+  Rendered layouts/_header.html.haml (1.6ms)
+Completed 200 OK in 49ms (Views: 46.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2017-01-26 10:31:27 +0530
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/edit.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.4ms)
+  Rendered products/_form.html.haml (8.2ms)
+  Rendered products/edit.html.haml within layouts/application (9.8ms)
+  Rendered layouts/_header.html.haml (3.7ms)
+Completed 200 OK in 52ms (Views: 49.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/products/6" for 127.0.0.1 at 2017-01-26 10:32:20 +0530
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CN/sp3msOnx8O1sMeRV3B7uKFc/jBWZG17+jaXTObktUzXmyM7eTIcoucrxIqDKIZcfloZaR/xiIi9InXEf0kg==", "product"=>{"name"=>"Patanjali", "stock_price"=>"62.0", "strike_price"=>"60.0", "maturity_time"=>"40", "risk_free_rate"=>"4.5", "volatility"=>"34.5"}, "commit"=>"Submit", "id"=>"6"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (305.8ms)[0m  [1m[33mUPDATE "products" SET "risk_free_rate" = ?, "volatility" = ?, "maturity_time" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["risk_free_rate", 4.5], ["volatility", 34.5], ["maturity_time", 40.0], ["updated_at", 2017-01-26 05:02:20 UTC], ["id", 6]]
+  [1m[35m (109.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/6
+Completed 302 Found in 422ms (ActiveRecord: 415.6ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 10:32:20 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (2.1ms)
+  Rendered products/_simulation_form.html.haml (3.2ms)
+  Rendered products/show.html.haml within layouts/application (35.4ms)
+  Rendered layouts/_header.html.haml (3.2ms)
+Completed 200 OK in 86ms (Views: 71.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-01-26 10:34:38 +0530
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  [1m[36mProduct Load (20.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered products/index.html.haml within layouts/application (30.4ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 87ms (Views: 46.9ms | ActiveRecord: 20.9ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2017-01-26 10:35:10 +0530
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/edit.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.6ms)
+  Rendered products/_form.html.haml (10.6ms)
+  Rendered products/edit.html.haml within layouts/application (14.3ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 64ms (Views: 56.5ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/products/6" for 127.0.0.1 at 2017-01-26 10:35:29 +0530
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1EsdSgHxYFkjq2kayv7b2lsHjpiQ9zzIDkuYsSa7qmavAjMjLythiZEHlWyuLaiVNUtEwj6PckKf65Lg1BQmFg==", "product"=>{"name"=>"Patanjali", "stock_price"=>"62.0", "strike_price"=>"60.0", "maturity_time"=>"40", "risk_free_rate"=>"4.5", "volatility"=>"34.5"}, "commit"=>"Submit", "id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "products" SET "risk_free_rate" = ?, "volatility" = ?, "maturity_time" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["risk_free_rate", 0.05], ["volatility", 0.35], ["maturity_time", 0.11], ["updated_at", 2017-01-26 05:05:29 UTC], ["id", 6]]
+  [1m[35m (121.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/6
+Completed 302 Found in 128ms (ActiveRecord: 122.7ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-01-26 10:35:29 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (2.0ms)
+  Rendered products/_simulation_form.html.haml (3.1ms)
+  Rendered products/show.html.haml within layouts/application (11.4ms)
+  Rendered layouts/_header.html.haml (3.2ms)
+Completed 200 OK in 49ms (Views: 47.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-26 10:36:52 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (3.1ms)
+  Rendered products/_form.html.haml (10.6ms)
+  Rendered products/new.html.haml within layouts/application (13.7ms)
+  Rendered layouts/_header.html.haml (1.6ms)
+Completed 200 OK in 60ms (Views: 47.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-26 10:38:08 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (2.5ms)
+  Rendered products/_form.html.haml (9.2ms)
+  Rendered products/new.html.haml within layouts/application (11.2ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-26 10:39:39 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.6ms)
+  Rendered products/_form.html.haml (8.6ms)
+  Rendered products/new.html.haml within layouts/application (10.2ms)
+  Rendered layouts/_header.html.haml (1.6ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-01-26 10:40:27 +0530
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0sC20Nyz79j5gQ7M+eK3FOoIhnFn1LIKNXD0ZOdJEBGO0iPFlqhGhU+UJ3zIX/KbNEV2HxJAK1RqRIUqz8CKyA==", "product"=>{"name"=>"Nokia", "stock_price"=>"70.5", "strike_price"=>"65.5", "maturity_time"=>"150", "risk_free_rate"=>"4.5", "volatility"=>"23.5"}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "products" ("name", "stock_price", "strike_price", "maturity_time", "risk_free_rate", "volatility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Nokia"], ["stock_price", 70.5], ["strike_price", 65.5], ["maturity_time", 0.410958904109589], ["risk_free_rate", 0.045], ["volatility", 0.235], ["created_at", 2017-01-26 05:10:27 UTC], ["updated_at", 2017-01-26 05:10:27 UTC]]
+  [1m[35m (404.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/7
+Completed 302 Found in 413ms (ActiveRecord: 406.4ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2017-01-26 10:40:27 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (2.0ms)
+  Rendered products/_simulation_form.html.haml (2.5ms)
+  Rendered products/show.html.haml within layouts/application (12.0ms)
+  Rendered layouts/_header.html.haml (9.2ms)
+Completed 200 OK in 63ms (Views: 58.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2017-01-26 10:41:04 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (1.9ms)
+  Rendered products/_simulation_form.html.haml (2.1ms)
+  Rendered products/show.html.haml within layouts/application (12.6ms)
+  Rendered layouts/_header.html.haml (1.6ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2017-01-26 10:41:24 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (3.2ms)
+  Rendered products/_simulation_form.html.haml (2.2ms)
+  Rendered products/show.html.haml within layouts/application (17.0ms)
+  Rendered layouts/_header.html.haml (3.2ms)
+Completed 200 OK in 66ms (Views: 63.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2017-01-26 10:41:32 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (3.0ms)
+  Rendered products/_simulation_form.html.haml (2.2ms)
+  Rendered products/show.html.haml within layouts/application (22.8ms)
+  Rendered layouts/_header.html.haml (3.3ms)
+Completed 200 OK in 66ms (Views: 64.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2017-01-26 10:42:47 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (6.4ms)
+  Rendered products/_simulation_form.html.haml (10.1ms)
+  Rendered products/show.html.haml within layouts/application (29.4ms)
+  Rendered layouts/_header.html.haml (2.3ms)
+Completed 200 OK in 90ms (Views: 86.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/7/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=rfr&product%5Bsensitive_factor%5D=5.6&commit=Submit" for 127.0.0.1 at 2017-01-26 10:43:07 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"rfr", "sensitive_factor"=>"5.6"}, "commit"=>"Submit", "product_id"=>"7"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (1.6ms)
+Completed 200 OK in 80ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/7/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=v&product%5Bsensitive_factor%5D=30.76&commit=Submit" for 127.0.0.1 at 2017-01-26 10:43:31 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"v", "sensitive_factor"=>"30.76"}, "commit"=>"Submit", "product_id"=>"7"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (2.9ms)
+Completed 200 OK in 20ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-01-26 10:43:53 +0530
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered products/index.html.haml within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `maturity_time' for nil:NilClass):
+    17:           %td= link_to product.name, product_path(product)
+    18:           %td.text-center= product.stock_price
+    19:           %td.text-center= product.strike_price
+    20:           %td.text-center= (@product.maturity_time*365).round
+    21:           %td.text-center= product.risk_free_rate*100
+    22:           %td.text-center= product.volatility*100
+    23:           %td.text-center
+  
+app/views/products/index.html.haml:20:in `block in _app_views_products_index_html_haml__3969512180253196380_70275095210020'
+app/views/products/index.html.haml:15:in `_app_views_products_index_html_haml__3969512180253196380_70275095210020'
+  Rendering /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.9ms)
+Started GET "/products" for 127.0.0.1 at 2017-01-26 10:44:13 +0530
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered products/index.html.haml within layouts/application (6.4ms)
+  Rendered layouts/_header.html.haml (2.1ms)
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/7/edit" for 127.0.0.1 at 2017-01-26 10:44:32 +0530
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering products/edit.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (2.2ms)
+  Rendered products/_form.html.haml (10.0ms)
+  Rendered products/edit.html.haml within layouts/application (12.4ms)
+  Rendered layouts/_header.html.haml (1.9ms)
+Completed 200 OK in 55ms (Views: 53.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/7/edit" for 127.0.0.1 at 2017-01-26 10:47:27 +0530
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering products/edit.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.3ms)
+  Rendered products/_form.html.haml (6.8ms)
+  Rendered products/edit.html.haml within layouts/application (10.5ms)
+  Rendered layouts/_header.html.haml (2.5ms)
+Completed 200 OK in 49ms (Views: 47.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/7/edit" for 127.0.0.1 at 2017-01-26 10:47:31 +0530
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering products/edit.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (2.5ms)
+  Rendered products/_form.html.haml (8.4ms)
+  Rendered products/edit.html.haml within layouts/application (10.0ms)
+  Rendered layouts/_header.html.haml (2.0ms)
+Completed 200 OK in 61ms (Views: 58.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/7/edit" for 127.0.0.1 at 2017-01-26 10:48:26 +0530
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering products/edit.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.2ms)
+  Rendered products/_form.html.haml (5.5ms)
+  Rendered products/edit.html.haml within layouts/application (8.3ms)
+  Rendered layouts/_header.html.haml (1.5ms)
+Completed 200 OK in 48ms (Views: 44.0ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/products/7" for 127.0.0.1 at 2017-01-26 10:48:36 +0530
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FdOIfUIY/2g2Pa0YfQ/THuFJ8eJVInpfsyu6u74zS3BJwR1oCANWNYAohKhMspaRPwQBjCC24wHsH8v1lrrRqQ==", "product"=>{"name"=>"Nokia", "stock_price"=>"70.5", "strike_price"=>"65.5", "maturity_time"=>"150", "risk_free_rate"=>"6.5", "volatility"=>"23.5"}, "commit"=>"Submit", "id"=>"7"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "products" SET "risk_free_rate" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["risk_free_rate", 0.065], ["updated_at", 2017-01-26 05:18:36 UTC], ["id", 7]]
+  [1m[35m (109.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/7
+Completed 302 Found in 120ms (ActiveRecord: 110.9ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2017-01-26 10:48:36 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (2.0ms)
+  Rendered products/_simulation_form.html.haml (2.0ms)
+  Rendered products/show.html.haml within layouts/application (13.0ms)
+  Rendered layouts/_header.html.haml (1.6ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-26 10:48:39 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.3ms)
+  Rendered products/_form.html.haml (11.9ms)
+  Rendered products/new.html.haml within layouts/application (14.8ms)
+  Rendered layouts/_header.html.haml (1.6ms)
+Completed 200 OK in 63ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-01-26 10:48:45 +0530
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ofluEZmG1/fIoA/TOjzuhAsOT9aApUyJeCMKwRIVwPDeblP2Dbqu6c78neN5H4mWRMCbZCD35Z85oTpGBcsDqg==", "product"=>{"name"=>"", "stock_price"=>"", "strike_price"=>"", "maturity_time"=>"", "risk_free_rate"=>"", "volatility"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (3.5ms)
+  Rendered products/_form.html.haml (10.6ms)
+  Rendered products/new.html.haml within layouts/application (12.9ms)
+  Rendered layouts/_header.html.haml (3.7ms)
+Completed 200 OK in 66ms (Views: 60.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-01-26 10:50:31 +0530
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered products/index.html.haml within layouts/application (7.0ms)
+  Rendered layouts/_header.html.haml (1.9ms)
+Completed 200 OK in 50ms (Views: 47.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-26 10:50:35 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.2ms)
+  Rendered products/_form.html.haml (24.2ms)
+  Rendered products/new.html.haml within layouts/application (27.6ms)
+  Rendered layouts/_header.html.haml (2.9ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-01-26 10:50:37 +0530
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1+YMzHI9WjIhQ+/MrbKekskT5gfsQT+6jxStKAjFvT2ocTEr5gEjLCcfffzukfmAht0ytUwTlqzOlp2vHxt+Zw==", "product"=>{"name"=>"", "stock_price"=>"", "strike_price"=>"", "maturity_time"=>"", "risk_free_rate"=>"", "volatility"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (4.4ms)
+  Rendered products/_form.html.haml (13.0ms)
+  Rendered products/new.html.haml within layouts/application (14.9ms)
+  Rendered layouts/_header.html.haml (1.6ms)
+Completed 200 OK in 69ms (Views: 60.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-26 10:52:04 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.3ms)
+  Rendered products/_form.html.haml (6.8ms)
+  Rendered products/new.html.haml within layouts/application (9.4ms)
+  Rendered layouts/_header.html.haml (1.8ms)
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-26 10:52:38 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.1ms)
+  Rendered products/_form.html.haml (13.9ms)
+  Rendered products/new.html.haml within layouts/application (16.5ms)
+  Rendered layouts/_header.html.haml (1.8ms)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-26 10:53:20 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.2ms)
+  Rendered products/_form.html.haml (8.2ms)
+  Rendered products/new.html.haml within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `*' for nil:NilClass):
+    17:       = f.number_field :maturity_time, class: "form-control", placeholder: "Enter the number of days", value: f.object.new_record? ? "" : (@product.maturity_time*365).round
+    18:     .form-group
+    19:       = f.label :risk_free_rate, "Risk Free Rate(%)*"
+    20:       = f.number_field :risk_free_rate, class: "form-control", step: 0.01, placeholder: "example 4.5", value: @product.risk_free_rate*100
+    21:     .form-group
+    22:       = f.label :volatility, "Volatility(%)*"
+    23:       = f.number_field :volatility, class: "form-control", step: 0.01, placeholder: "example 23.5", value: f.object.new_record? ? 0.0 : @product.volatility*100 
+  
+app/views/products/_form.html.haml:20:in `block in _app_views_products__form_html_haml__4498717000242125344_70275162550460'
+app/views/products/_form.html.haml:1:in `_app_views_products__form_html_haml__4498717000242125344_70275162550460'
+app/views/products/new.html.haml:5:in `_app_views_products_new_html_haml___2783330447757781716_70275162648120'
+  Rendering /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/shree/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.0ms)
+Started GET "/products/new" for 127.0.0.1 at 2017-01-26 10:53:41 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (4.4ms)
+  Rendered products/_form.html.haml (14.9ms)
+  Rendered products/new.html.haml within layouts/application (17.0ms)
+  Rendered layouts/_header.html.haml (3.1ms)
+Completed 200 OK in 89ms (Views: 87.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-26 10:54:17 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (2.1ms)
+  Rendered products/_form.html.haml (10.1ms)
+  Rendered products/new.html.haml within layouts/application (12.6ms)
+  Rendered layouts/_header.html.haml (2.0ms)
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-26 10:55:14 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.1ms)
+  Rendered products/_form.html.haml (7.9ms)
+  Rendered products/new.html.haml within layouts/application (9.9ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 58ms (Views: 48.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-01-26 10:58:05 +0530
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (1.3ms)
+  Rendered products/_form.html.haml (5.9ms)
+  Rendered products/new.html.haml within layouts/application (7.5ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 55ms (Views: 44.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-01-26 10:58:50 +0530
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kNsNlU8IxStE9VEt1EVUTv65vhHuMGnDs123IsbVNOrMyZiABRNsdvLgeJ3l+BHBIPROf5uk8J3sacZs7lyuMw==", "product"=>{"name"=>"Oppo", "stock_price"=>"45", "strike_price"=>"42", "maturity_time"=>"365", "risk_free_rate"=>"4.56", "volatility"=>"34.43"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (36.7ms)[0m  [1m[32mINSERT INTO "products" ("name", "stock_price", "strike_price", "maturity_time", "risk_free_rate", "volatility", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Oppo"], ["stock_price", 45.0], ["strike_price", 42.0], ["maturity_time", 1.0], ["risk_free_rate", 0.045599999999999995], ["volatility", 0.3443], ["created_at", 2017-01-26 05:28:50 UTC], ["updated_at", 2017-01-26 05:28:50 UTC]]
+  [1m[35m (217.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/8
+Completed 302 Found in 258ms (ActiveRecord: 253.8ms)
+
+
+Started GET "/products/8" for 127.0.0.1 at 2017-01-26 10:58:51 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (2.2ms)
+  Rendered products/_simulation_form.html.haml (2.1ms)
+  Rendered products/show.html.haml within layouts/application (12.9ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/8/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=rfr&product%5Bsensitive_factor%5D=5&commit=Submit" for 127.0.0.1 at 2017-01-26 10:59:10 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"rfr", "sensitive_factor"=>"5"}, "commit"=>"Submit", "product_id"=>"8"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (2.5ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/8/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=rfr&product%5Bsensitive_factor%5D=5.56&commit=Submit" for 127.0.0.1 at 2017-01-26 10:59:24 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"rfr", "sensitive_factor"=>"5.56"}, "commit"=>"Submit", "product_id"=>"8"}
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (1.5ms)
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/8/simulation_result?utf8=%E2%9C%93&product%5Bs_id%5D=v&product%5Bsensitive_factor%5D=2.3&commit=Submit" for 127.0.0.1 at 2017-01-26 10:59:34 +0530
+Processing by ProductsController#simulation_result as JS
+  Parameters: {"utf8"=>"✓", "product"=>{"s_id"=>"v", "sensitive_factor"=>"2.3"}, "commit"=>"Submit", "product_id"=>"8"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering products/simulation_result.js.haml
+  Rendered products/simulation_result.js.haml (2.1ms)
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-01-26 10:59:56 +0530
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered products/index.html.haml within layouts/application (6.5ms)
+  Rendered layouts/_header.html.haml (1.5ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/8/edit" for 127.0.0.1 at 2017-01-26 11:00:02 +0530
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering products/edit.html.haml within layouts/application
+  Rendered shared/_error_messages.html.haml (2.1ms)
+  Rendered products/_form.html.haml (9.9ms)
+  Rendered products/edit.html.haml within layouts/application (12.3ms)
+  Rendered layouts/_header.html.haml (1.4ms)
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/8" for 127.0.0.1 at 2017-01-26 11:00:29 +0530
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wAXQAkxWz29XOjAwxBonEWoopNO3Sm0vFo79OjPe/Metr+Ecbepczm830PNofn/JRniFvQhNT34+DIonT8zHMw==", "product"=>{"name"=>"Oppo", "stock_price"=>"45.0", "strike_price"=>"42.0", "maturity_time"=>"365", "risk_free_rate"=>"4.5", "volatility"=>"34.4"}, "commit"=>"Submit", "id"=>"8"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "products" SET "risk_free_rate" = ?, "volatility" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["risk_free_rate", 0.045], ["volatility", 0.344], ["updated_at", 2017-01-26 05:30:30 UTC], ["id", 8]]
+  [1m[35m (113.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/8
+Completed 302 Found in 119ms (ActiveRecord: 114.3ms)
+
+
+Started GET "/products/8" for 127.0.0.1 at 2017-01-26 11:00:30 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering products/show.html.haml within layouts/application
+  Rendered products/_simulation_buttons.html.haml (1.8ms)
+  Rendered products/_simulation_form.html.haml (1.8ms)
+  Rendered products/show.html.haml within layouts/application (10.3ms)
+  Rendered layouts/_header.html.haml (1.7ms)
+Completed 200 OK in 51ms (Views: 47.5ms | ActiveRecord: 0.3ms)
+
+

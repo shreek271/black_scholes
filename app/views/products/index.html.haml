@@ -8,18 +8,18 @@
         %th Name
         %th.text-center Stock Price
         %th.text-center Strike Price     
-        %th.text-center Expiry Time(Years)
-        %th.text-center Risk-free Rate
-        %th.text-center Volatility    
+        %th.text-center Expiry Time(Days)
+        %th.text-center Risk-free Rate(%)
+        %th.text-center Volatility(%)   
         %th.text-center Actions
       - @products.each do |product|
         %tr
           %td= link_to product.name, product_path(product)
           %td.text-center= product.stock_price
           %td.text-center= product.strike_price
-          %td.text-center= product.maturity_time
-          %td.text-center= product.risk_free_rate
-          %td.text-center= product.volatility
+          %td.text-center= (product.maturity_time*365).round
+          %td.text-center= product.risk_free_rate*100
+          %td.text-center= product.volatility*100
           %td.text-center
             = link_to "edit", edit_product_path(product), class: 'btn btn-xs btn-primary'
             = link_to "delete", product, method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-xs btn-danger'

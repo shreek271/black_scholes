@@ -1,2 +1,2 @@
-$("#originalGraph").html("#{j column_chart({'Option Price' => @call_price})}");
-$("#simulatedGraph").html("#{j column_chart({'Simulated Price' => @sensitivity_factor})}");
+$("#call-price-graph").html("#{j column_chart({'Original Call Price' => @call_price, 'Simulated Call Price' => @sensitive_call_price})}");
+$("#put-price-graph").html("#{j column_chart({'Original Put Price' => @put_price, 'Simulated Put Price' => @sensitive_put_price})}");

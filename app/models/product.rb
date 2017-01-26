@@ -5,9 +5,10 @@ class Product < ApplicationRecord
 
   # used for min/max normal distribution
   MIN_Z_SCORE, MAX_Z_SCORE = -8.0, +8.0
+  
   validates :name, presence: true
-  validates_numericality_of :volatility, presence: true, less_than_or_equal_to: 100, greater_than_or_equal_to: 0
-  validates_numericality_of :risk_free_rate, presence: true , less_than_or_equal_to: 100, greater_than_or_equal_to: 0
+  validates_numericality_of :volatility, presence: true
+  validates_numericality_of :risk_free_rate, presence: true
   validates :stock_price, presence: true
   validates :strike_price, presence: true
   validates_numericality_of :maturity_time, presence: true, greater_than: 0
